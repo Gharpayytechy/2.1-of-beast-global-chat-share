@@ -764,8 +764,8 @@ export default function GharpayyForm() {
   const visitDyn = VISIT_DYNAMIC(data);
 
   return (
-    <div className="min-h-[100dvh] w-full flex justify-center" style={{ background: "var(--brand-navy)" }}>
-      <div className="w-full max-w-md relative min-h-[100dvh] flex flex-col overflow-hidden wa-chat-bg">
+    <div className="h-[100dvh] w-full flex justify-center overflow-hidden" style={{ background: "var(--brand-navy)" }}>
+      <div className="w-full max-w-md relative h-[100dvh] flex flex-col overflow-hidden wa-chat-bg">
         <ChatHeader
           onBack={isInteractive && history.length > 0 && !submitting ? back : undefined}
           onForward={isInteractive && future.length > 0 && !submitting ? forward : undefined}
